@@ -1,0 +1,103 @@
+package com.company;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.stream.IntStream;
+
+public class rockpapaers {
+
+    public static void main(String[] args) {
+
+
+
+
+
+        for(int i=1; i<=5; i++)
+        {
+
+
+
+            Scanner U = new Scanner(System.in);
+
+            var user = U.nextInt();
+
+            Random r = new Random();
+            var random = r.nextInt(3);
+            System.out.println(random);
+
+
+            if (random==0 && user==0)
+
+            {
+                System.out.println("draw");
+            }
+
+            else if (random==1 && user==1)
+
+            {
+                System.out.println("draw");
+            }
+
+            else if (random==2 && user==2)
+
+            {
+                System.out.println("draw");
+            }
+
+            else if (random==0 && user==1)
+
+            {
+                System.out.println("vivek winss");
+            }
+
+            else if (random==0 && user==2)
+
+            {
+                System.out.println("computer wins");
+            }
+
+            else if (random==1 && user==0)
+
+            {
+                System.out.println("computer wins");
+            }
+
+            else if (random==1 && user==2)
+
+            {
+                System.out.println("vivek wins");
+            }
+
+            else if (random==2 && user==0)
+
+            {
+                System.out.println("computer wins");
+            }
+
+            else if (random==2 && user==1)
+
+            {
+                System.out.println("vivek wins");
+            }
+
+            else(user >= 2.0f)
+            {
+                System.out.println("pls enter between 0 to 2");
+            }
+
+
+
+
+
+
+            System.out.println("chances exhausted==" +  i);
+
+
+
+
+
+        }
+
+
+
+    }
+}
